@@ -27,12 +27,9 @@ export default function ComingSoon() {
       </div>
 
       {/* Tagline */}
-      <h1 className="text-white text-4xl sm:text-5xl font-bold mb-4 max-w-lg leading-tight">
+      <h1 className="text-white text-4xl sm:text-5xl font-bold mb-10 max-w-lg leading-tight">
         Coming Soon
       </h1>
-      <p className="text-salara-300 text-lg sm:text-xl mb-10 max-w-md">
-        Your AI-powered real estate assistant is almost here.
-      </p>
 
       {/* Email form */}
       {submitted ? (
