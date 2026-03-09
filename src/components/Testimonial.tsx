@@ -17,17 +17,14 @@ export function Testimonial() {
           </div>
 
           <blockquote className="text-xl sm:text-2xl font-medium text-salara-800 leading-relaxed">
-            &ldquo;We&apos;re building SALARA because we saw first-hand how much
-            time agents waste on repetitive work, and how much knowledge agencies
-            lose when people move on. This is the platform we wish existed when
-            we were running our own agency.&rdquo;
+            &ldquo;SALARA was built because I watched great agents waste hours
+            every day on admin and watched agencies lose years of knowledge every
+            time someone left. Real estate deserves better tools. This
+            is it.&rdquo;
           </blockquote>
 
           <div className="mt-8">
-            <p className="font-semibold text-salara-900">SALARA Founding Team</p>
-            <p className="text-sm text-salara-500 mt-1">
-              Built by people who&apos;ve lived the problem
-            </p>
+            <p className="font-semibold text-salara-900">Founder, SALARA</p>
           </div>
         </div>
       </div>

@@ -4,10 +4,35 @@ import { useState, type FormEvent } from "react";
 
 export function DemoForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: wire up to backend / API endpoint
+    setSubmitting(true);
+
+    const form = e.currentTarget;
+    const data = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      agency: (form.elements.namedItem("agency") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      agents: (form.elements.namedItem("agents") as HTMLSelectElement).value,
+    };
+
+    console.log("Demo request submitted:", data);
+
+    // TODO: Replace with actual serverless endpoint that emails team@salara.io
+    try {
+      await fetch("/api/demo-request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+    } catch {
+      // Endpoint not wired up yet — silently continue
+    }
+
+    setSubmitting(false);
     setSubmitted(true);
   }
 
@@ -150,9 +175,10 @@ export function DemoForm() {
 
               <button
                 type="submit"
-                className="mt-8 w-full px-8 py-4 bg-salara-600 text-white font-semibold rounded-xl hover:bg-salara-700 transition-colors text-base shadow-lg shadow-salara-600/20"
+                disabled={submitting}
+                className="mt-8 w-full px-8 py-4 bg-salara-600 text-white font-semibold rounded-xl hover:bg-salara-700 transition-colors text-base shadow-lg shadow-salara-600/20 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Book My Demo
+                {submitting ? "Submitting..." : "Book My Demo"}
               </button>
 
               <p className="mt-4 text-xs text-salara-400 text-center">
