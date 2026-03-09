@@ -23,10 +23,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 text-lg sm:text-xl text-salara-600 leading-relaxed max-w-2xl mx-auto">
-            SALARA is the Smart Adaptive Learning Assistant for real estate.
-            It learns each agent&apos;s style, handles the admin grind, and gets
-            smarter with every interaction &mdash; while the agency owns every
-            bit of data.
+            SALARA learns how you work, knows NZ and AU compliance, and gets
+            smarter every day you use it.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -40,10 +38,10 @@ export function Hero() {
               </svg>
             </a>
             <a
-              href="#features"
+              href="#agencies"
               className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-white text-salara-700 font-semibold rounded-xl border border-salara-200 hover:border-salara-300 hover:bg-salara-50 transition-all text-base"
             >
-              See How It Works
+              For Agencies
             </a>
           </div>
 

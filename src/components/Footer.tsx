@@ -35,8 +35,13 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#for-agencies" className="hover:text-white transition-colors">
+                <a href="#agencies" className="hover:text-white transition-colors">
                   For Agencies
+                </a>
+              </li>
+              <li>
+                <a href="#pricing" className="hover:text-white transition-colors">
+                  Pricing
                 </a>
               </li>
               <li>
@@ -53,10 +58,10 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="mailto:hello@salara.io"
+                  href="mailto:team@salara.io"
                   className="hover:text-white transition-colors"
                 >
-                  hello@salara.io
+                  team@salara.io
                 </a>
               </li>
               <li>Auckland, New Zealand</li>

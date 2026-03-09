@@ -34,10 +34,16 @@ export function Header() {
               How It Works
             </a>
             <a
-              href="#for-agencies"
+              href="#agencies"
               className="text-sm font-medium text-salara-600 hover:text-salara-900 transition-colors"
             >
               For Agencies
+            </a>
+            <a
+              href="#pricing"
+              className="text-sm font-medium text-salara-600 hover:text-salara-900 transition-colors"
+            >
+              Pricing
             </a>
             <a
               href="#book-demo"
@@ -75,8 +81,11 @@ export function Header() {
           <a href="#how-it-works" className="block text-sm font-medium text-salara-600 py-2" onClick={() => setMenuOpen(false)}>
             How It Works
           </a>
-          <a href="#for-agencies" className="block text-sm font-medium text-salara-600 py-2" onClick={() => setMenuOpen(false)}>
+          <a href="#agencies" className="block text-sm font-medium text-salara-600 py-2" onClick={() => setMenuOpen(false)}>
             For Agencies
+          </a>
+          <a href="#pricing" className="block text-sm font-medium text-salara-600 py-2" onClick={() => setMenuOpen(false)}>
+            Pricing
           </a>
           <a
             href="#book-demo"

@@ -45,7 +45,7 @@ export function DemoForm() {
               Get Started
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-salara-900 tracking-tight">
-              Book a demo
+              Book a Demo
             </h2>
             <p className="mt-4 text-lg text-salara-600">
               See how SALARA works for your agency. We&apos;ll walk you through
@@ -71,12 +71,8 @@ export function DemoForm() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-salara-900 mb-2">
-                Thanks! We&apos;ll be in touch shortly.
+                Thanks &mdash; we&apos;ll be in touch within one business day.
               </h3>
-              <p className="text-salara-600">
-                One of our team will reach out within 24 hours to arrange your
-                personalised demo.
-              </p>
             </div>
           ) : (
             <form
@@ -157,7 +153,7 @@ export function DemoForm() {
                   htmlFor="agents"
                   className="block text-sm font-medium text-salara-700 mb-1.5"
                 >
-                  How many agents in your agency?
+                  How many agents?
                 </label>
                 <select
                   id="agents"
@@ -165,11 +161,12 @@ export function DemoForm() {
                   className="w-full px-4 py-3 rounded-lg border border-salara-200 text-salara-900 focus:outline-none focus:ring-2 focus:ring-salara-500 focus:border-transparent text-sm"
                 >
                   <option value="">Select...</option>
-                  <option value="1-5">1 &ndash; 5</option>
-                  <option value="6-15">6 &ndash; 15</option>
-                  <option value="16-30">16 &ndash; 30</option>
-                  <option value="31-50">31 &ndash; 50</option>
-                  <option value="50+">50+</option>
+                  <option value="just-me">Just me</option>
+                  <option value="2-5">2 &ndash; 5 agents</option>
+                  <option value="6-15">6 &ndash; 15 agents</option>
+                  <option value="16-30">16 &ndash; 30 agents</option>
+                  <option value="31-50">31 &ndash; 50 agents</option>
+                  <option value="50+">50+ agents</option>
                 </select>
               </div>
 
