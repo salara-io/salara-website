@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-salara-900: #0a1628;
+  --color-salara-800: #111d35;
+  --color-salara-700: #1a2d4d;
+  --color-salara-600: #243e68;
+  --color-salara-500: #2e5a8a;
+  --color-salara-400: #4a90d9;
+  --color-salara-300: #7ab3eb;
+  --color-salara-200: #b3d4f5;
+  --color-salara-100: #dfedf9;
+  --color-salara-50: #f0f7fd;
+  --color-accent-500: #10b981;
+  --color-accent-400: #34d399;
+  --color-accent-600: #059669;
+  --color-warm-500: #f59e0b;
+  --color-warm-400: #fbbf24;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
